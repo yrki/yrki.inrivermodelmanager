@@ -1,0 +1,24 @@
+﻿
+Load assembly from .dll / path / search for dlls with attributes
+
+
+Convert from:
+	Strongly typed model to InRiver Model - OK.
+	Inriver model to strongly typed mode
+
+Recursive stop 
+
+LocaleString 
+	- On Fields
+	- 
+
+// Validation
+// Validate EntityType exists
+// Ensure not equal index in FieldTypes
+
+Export 
+Import
+
+
+
+

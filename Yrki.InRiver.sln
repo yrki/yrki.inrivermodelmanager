@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yrki.InRiver.Attributes", "Yrki.InRiver.Attributes\Yrki.InRiver.Attributes.csproj", "{DD9AA882-0A0C-489E-9966-B8A6053E3CAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yrki.InRiver.ModelManager", "Yrki.InRiver.ModelManager\Yrki.InRiver.ModelManager.csproj", "{F0FCA35A-0033-4CC2-8829-5AAA312CFCC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yrki.InRiver.ModelManager.Tests", "Yrki.InRiver.ModelManager.Tests\Yrki.InRiver.ModelManager.Tests.csproj", "{B618E9EC-5092-4A8E-A055-DCF35780BA0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F024F6CB-BB76-4258-9048-6E8A8F5A90F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{08699F45-126B-4DF1-B9D1-0BF71D8B10D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yrki.InRiver.TestConsole", "Yrki.InRiver.TestConsole\Yrki.InRiver.TestConsole.csproj", "{DFF758B0-870C-4A1E-9A0A-3553EA11F657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yrki.InRiver.TestModel", "Yrki.InRiver.TestModel\Yrki.InRiver.TestModel.csproj", "{35210728-41C4-4A71-9328-C2A86B2956A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{16598A95-1447-4988-97EC-8C3298C0FDB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yrki.InRiver.ModelCreator", "Yrki.InRiver.ModelCreator\Yrki.InRiver.ModelCreator.csproj", "{AAE1B4BE-3919-483A-927B-1729B95A0171}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD9AA882-0A0C-489E-9966-B8A6053E3CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9AA882-0A0C-489E-9966-B8A6053E3CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9AA882-0A0C-489E-9966-B8A6053E3CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9AA882-0A0C-489E-9966-B8A6053E3CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0FCA35A-0033-4CC2-8829-5AAA312CFCC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0FCA35A-0033-4CC2-8829-5AAA312CFCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0FCA35A-0033-4CC2-8829-5AAA312CFCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0FCA35A-0033-4CC2-8829-5AAA312CFCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B618E9EC-5092-4A8E-A055-DCF35780BA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B618E9EC-5092-4A8E-A055-DCF35780BA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B618E9EC-5092-4A8E-A055-DCF35780BA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B618E9EC-5092-4A8E-A055-DCF35780BA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF758B0-870C-4A1E-9A0A-3553EA11F657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF758B0-870C-4A1E-9A0A-3553EA11F657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF758B0-870C-4A1E-9A0A-3553EA11F657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF758B0-870C-4A1E-9A0A-3553EA11F657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35210728-41C4-4A71-9328-C2A86B2956A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35210728-41C4-4A71-9328-C2A86B2956A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35210728-41C4-4A71-9328-C2A86B2956A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35210728-41C4-4A71-9328-C2A86B2956A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE1B4BE-3919-483A-927B-1729B95A0171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE1B4BE-3919-483A-927B-1729B95A0171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE1B4BE-3919-483A-927B-1729B95A0171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE1B4BE-3919-483A-927B-1729B95A0171}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD9AA882-0A0C-489E-9966-B8A6053E3CAB} = {08699F45-126B-4DF1-B9D1-0BF71D8B10D2}
+		{F0FCA35A-0033-4CC2-8829-5AAA312CFCC5} = {08699F45-126B-4DF1-B9D1-0BF71D8B10D2}
+		{B618E9EC-5092-4A8E-A055-DCF35780BA0B} = {F024F6CB-BB76-4258-9048-6E8A8F5A90F6}
+		{AAE1B4BE-3919-483A-927B-1729B95A0171} = {16598A95-1447-4988-97EC-8C3298C0FDB9}
+	EndGlobalSection
+EndGlobal
