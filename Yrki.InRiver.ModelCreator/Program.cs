@@ -54,7 +54,7 @@ namespace Yrki.InRiver.ModelCreator
 		public string FileTemplate(string namespaceString, string classString)
 		{
 			var template = $"using System;" + Environment.NewLine +
-						   $"using Yrki.InRiver.Attributes;" + Environment.NewLine +
+						   $"using Yrki.InRiver.Attributes;" + Environment.NewLine + 
 						   Environment.NewLine +
 						   $"namespace {namespaceString}" + Environment.NewLine +
 						   "{ " + Environment.NewLine +
@@ -117,9 +117,5 @@ namespace Yrki.InRiver.ModelCreator
 		}
 
 
-
-
-
 	}
-}
 }
