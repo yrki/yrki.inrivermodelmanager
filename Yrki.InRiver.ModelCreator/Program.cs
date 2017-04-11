@@ -113,7 +113,7 @@ namespace Yrki.InRiver.ModelCreator
 
 		public string LinkTemplate(LinkType linkType)
 		{
-
+			throw new NotImplementedException();
 		}
 
 
