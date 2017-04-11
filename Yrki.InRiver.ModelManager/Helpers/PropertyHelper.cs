@@ -6,7 +6,7 @@ using Yrki.InRiver.Attributes;
 
 namespace Yrki.InRiver.Helpers
 {
-	public class PropertyHelper : IPropertyHelper
+	internal class PropertyHelper : IPropertyHelper
 	{
 		public PropertyInfo GetPropertyForFieldType(Type type, string fieldTypeId)
 		{
@@ -14,11 +14,11 @@ namespace Yrki.InRiver.Helpers
 
 			foreach (var property in allProperties)
 			{
-				var fieldTypeAttributes = property.GetCustomAttributes(typeof(InRiverFieldTypeAttribute));
+				var fieldTypeAttributes = property.GetCustomAttributes<InRiverFieldTypeAttribute>();
 
 				if (fieldTypeAttributes.Any())
 				{
-					var attribute = (InRiverFieldTypeAttribute) fieldTypeAttributes.FirstOrDefault();
+					var attribute = fieldTypeAttributes.FirstOrDefault();
 
 					if (string.Equals(attribute.FieldTypeId, fieldTypeId, StringComparison.InvariantCultureIgnoreCase))
 					{
@@ -36,8 +36,8 @@ namespace Yrki.InRiver.Helpers
 
 			foreach (var property in allProperties)
 			{
-				var customAttributes = property.GetCustomAttributes(typeof(InRiverLinkTypeAttribute));
-
+				var customAttributes = property.GetCustomAttributes<InRiverLinkTypeAttribute>();
+				
 				if (customAttributes.Any())
 				{
 					return property;

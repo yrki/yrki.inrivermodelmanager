@@ -2,7 +2,7 @@
 
 namespace Yrki.InRiver.Converters
 {
-	public interface IObjectConverter
+	internal interface IObjectConverter
 	{
 		Entity ConvertToEntity(object objectToConvert);
 	}

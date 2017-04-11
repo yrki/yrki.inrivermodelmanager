@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 
 namespace Yrki.InRiver
 {
@@ -7,22 +8,21 @@ namespace Yrki.InRiver
 	    private static bool _isAssemblyLoaded;
 	    private static Assembly _assembly;
 	    private static IDataService _dataService;
+
 		public static void Load(string assemblyName)
 		{
-			_assembly = Assembly.Load("Yrki.InRiver.TestModel");
+			_assembly = Assembly.Load(assemblyName);
 			_isAssemblyLoaded = true;
 		}
 
 		public static void LoadFile(string path)
 		{
-			_assembly = Assembly.Load("Yrki.InRiver.TestModel");
-			_isAssemblyLoaded = true;
+			throw new NotImplementedException();
 		}
 
 	    public static void LoadPath(string folder)
 	    {
-			_assembly = Assembly.Load("Yrki.InRiver.TestModel");
-			_isAssemblyLoaded = true;
+			throw new NotImplementedException();
 	    }
 
 

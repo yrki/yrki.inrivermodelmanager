@@ -5,7 +5,7 @@ using inRiver.Remoting.Objects;
 
 namespace Yrki.InRiver.Converters
 {
-    public class LocaleStringConverter : TypeConverter
+    internal class LocaleStringConverter : TypeConverter
     {
         public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
         {

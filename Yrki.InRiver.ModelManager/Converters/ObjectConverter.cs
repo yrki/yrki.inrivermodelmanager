@@ -8,7 +8,7 @@ using Yrki.InRiver.Attributes;
 
 namespace Yrki.InRiver.Converters
 {
-	public class ObjectConverter : IObjectConverter
+	internal class ObjectConverter : IObjectConverter
 	{
 
 		public ObjectConverter()

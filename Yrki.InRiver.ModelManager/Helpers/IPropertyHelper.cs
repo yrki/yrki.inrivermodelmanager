@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace Yrki.InRiver.Helpers
 {
-	public interface IPropertyHelper
+	internal interface IPropertyHelper
 	{
 		PropertyInfo GetFieldForLink(Type sourceType, Type targetType);
 		PropertyInfo GetPropertyForFieldType(Type type, string fieldTypeId);

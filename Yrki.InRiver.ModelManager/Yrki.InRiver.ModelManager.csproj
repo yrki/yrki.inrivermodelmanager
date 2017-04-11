@@ -59,9 +59,6 @@
     <Compile Include="Helpers\PropertyHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="TODO.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Yrki.InRiver.Attributes\Yrki.InRiver.Attributes.csproj">
       <Project>{dd9aa882-0a0c-489e-9966-b8a6053e3cab}</Project>
       <Name>Yrki.InRiver.Attributes</Name>

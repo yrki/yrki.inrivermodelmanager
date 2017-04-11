@@ -10,12 +10,12 @@ using Yrki.InRiver.Helpers;
 
 namespace Yrki.InRiver.Converters
 {
-	public class EntityConverter : IEntityConverter
+	internal class EntityConverter : IEntityConverter
 	{
 		private readonly Assembly _assembly;
 		private readonly IPropertyHelper _propertyHelper;
 
-		public EntityConverter(Assembly assembly, IPropertyHelper propertyHelper)
+		internal EntityConverter(Assembly assembly, IPropertyHelper propertyHelper)
 		{
 			TypeDescriptor.AddAttributes(typeof(inRiver.Remoting.Objects.LocaleString), new TypeConverterAttribute(typeof(LocaleStringConverter)));
 
@@ -39,7 +39,6 @@ namespace Yrki.InRiver.Converters
 			}
 
 			return (T)result; ;
-
 		}
 
 		private void PopulateFields(object o, Entity entity)
@@ -64,9 +63,8 @@ namespace Yrki.InRiver.Converters
 		{
 			foreach (Link link in links)
 			{
-				//if (link.ToString() == "ItemItem") continue;
-
-				var childEntity = RemoteManager.DataService.GetEntity(link.Target.Id, LoadLevel.DataAndLinks); // TODO: Refactor this?
+				// TODO: Remove this...
+				var childEntity = RemoteManager.DataService.GetEntity(link.Target.Id, LoadLevel.DataAndLinks);
 				var childObject = ConvertTo<object>(childEntity);
 
 				if (childObject != null)

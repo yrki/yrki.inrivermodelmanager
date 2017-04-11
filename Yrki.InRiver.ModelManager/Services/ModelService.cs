@@ -20,6 +20,11 @@ namespace Yrki.InRiver
 		{
 			throw new NotImplementedException();
 		}
+
+		public void SyncronizeModelWithInRiverServer()
+		{
+			throw new NotImplementedException();
+		}
 	}
 
 }
