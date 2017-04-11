@@ -1,4 +1,7 @@
-﻿using Yrki.InRiver.Attributes;
+﻿using System.CodeDom;
+using System.Collections.Generic;
+using System.ComponentModel;
+using Yrki.InRiver.Attributes;
 
 namespace Yrki.InRiver.TestModel
 {
@@ -14,8 +17,8 @@ namespace Yrki.InRiver.TestModel
 		[InRiverFieldType(FieldTypeId = "ProductShortDescription")]
 		public string ProductShortDescription { get; set; }
 
-		[InRiverFieldType(FieldTypeId = "ProductLongDescription")]
-		public string ProductLongDescription { get; set; }
+		[InRiverLinkType(LinkType = "ProductItem", SourceEntityType = typeof(MyProduct), TargetEntityType = typeof(MyItem))]
+		public List<MyItem> Items { get; set; }
 
 	}
 }
