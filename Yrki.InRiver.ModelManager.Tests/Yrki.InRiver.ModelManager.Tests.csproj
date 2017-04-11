@@ -7,8 +7,8 @@
     <ProjectGuid>{B618E9EC-5092-4A8E-A055-DCF35780BA0B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Yrki.InRiver.ModelManager.Tests</RootNamespace>
-    <AssemblyName>Yrki.InRiver.ModelManager.Tests</AssemblyName>
+    <RootNamespace>Yrki.InRiver.Tests</RootNamespace>
+    <AssemblyName>Yrki.InRiver.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="inRiver.Remoting">
+      <HintPath>..\References\InRiver.6.3.0.16292\inRiver.Remoting.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.1.11\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -48,11 +51,22 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="DataService_ConvertToEntity.cs" />
+    <Compile Include="DataService_ConvertToModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Yrki.InRiver.Attributes\Yrki.InRiver.Attributes.csproj">
+      <Project>{DD9AA882-0A0C-489E-9966-B8A6053E3CAB}</Project>
+      <Name>Yrki.InRiver.Attributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Yrki.InRiver.ModelManager\Yrki.InRiver.ModelManager.csproj">
+      <Project>{f0fca35a-0033-4cc2-8829-5aaa312cfcc5}</Project>
+      <Name>Yrki.InRiver.ModelManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
